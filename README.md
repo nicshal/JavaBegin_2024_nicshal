@@ -1,1 +1,1 @@
-# Учебный проект курса Java Basic Developer - 29.12.2023
+# Учебный проект курса Java Developer. Basic - 29.12.2023
