@@ -60,7 +60,8 @@ public class HomeWork2 {
             System.out.println("Ошибка: массив содержит нечетное количество элементов. " +
                     "Разделение на две равные половины (по количеству элементов) невозможно");
         } else {
-            int sum1 = 0, sum2 = 0;
+            int sum1 = 0;
+            int sum2 = 0;
             int ln = arr.length / 2;
 
             for (int j = 0; j < arr.length; j++) {
@@ -70,7 +71,6 @@ public class HomeWork2 {
                     sum2 += arr[j];
                 }
             }
-
             if (sum1 > sum2) {
                 System.out.println("Сумма элементов первой половины массива (" + sum1 +
                         ") больше суммы элементов второй половины массива (" + sum2 + ")");
@@ -83,5 +83,4 @@ public class HomeWork2 {
             }
         }
     }
-
 }
