@@ -8,7 +8,7 @@ public class Main {
         Cat cat1 = new Cat("Барсик", 1, 1, 15);
         Cat cat2 = new Cat("Мурзик", 2, 1, 25);
         Horse horse1 = new Horse("Буцефал", 7, 5, 500);
-        Horse horse2 = new Horse("Гнедой", 12, 6, 1000);
+        Horse horse2 = new Horse("Гнедой", 12, 6, 1010);
 
         dog1.info();
         dog2.info();
