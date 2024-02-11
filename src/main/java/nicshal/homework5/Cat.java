@@ -2,8 +2,8 @@ package nicshal.homework5;
 
 public class Cat extends Animal {
 
-    public Cat(String name, int runningSpeed, int swimmingSpeed, int endurance) {
-        super(name, runningSpeed, swimmingSpeed, endurance);
+    public Cat(String name, int runningSpeed, int endurance) {
+        super(name, runningSpeed, endurance);
     }
 
     @Override

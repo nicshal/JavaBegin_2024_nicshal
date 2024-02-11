@@ -3,12 +3,12 @@ package nicshal.homework5;
 public class Main {
 
     public static void main(String[] args) {
-        Dog dog1 = new Dog("Шарик", 2, 1, 20);
-        Dog dog2 = new Dog("Бобик", 3, 2, 100);
-        Cat cat1 = new Cat("Барсик", 1, 1, 15);
-        Cat cat2 = new Cat("Мурзик", 2, 1, 25);
-        Horse horse1 = new Horse("Буцефал", 7, 5, 500);
-        Horse horse2 = new Horse("Гнедой", 12, 6, 1010);
+        Dog dog1 = new Dog("Шарик", 2, 20, 1);
+        Dog dog2 = new Dog("Бобик", 3, 100, 2);
+        Cat cat1 = new Cat("Барсик", 1, 15);
+        Cat cat2 = new Cat("Мурзик", 1, 25);
+        Horse horse1 = new Horse("Буцефал", 7, 500, 5);
+        Horse horse2 = new Horse("Гнедой", 12, 1010, 6);
 
         dog1.info();
         dog2.info();

@@ -6,13 +6,11 @@ public abstract class Animal {
 
     private String name;
     private int runningSpeed;
-    private int swimmingSpeed;
     private int endurance;
 
-    public Animal(String name, int runningSpeed, int swimmingSpeed, int endurance) {
+    public Animal(String name, int runningSpeed, int endurance) {
         this.name = name;
         this.runningSpeed = runningSpeed;
-        this.swimmingSpeed = swimmingSpeed;
         this.endurance = endurance;
     }
 
@@ -30,14 +28,6 @@ public abstract class Animal {
 
     public void setRunningSpeed(int runningSpeed) {
         this.runningSpeed = runningSpeed;
-    }
-
-    public int getSwimmingSpeed() {
-        return swimmingSpeed;
-    }
-
-    public void setSwimmingSpeed(int swimmingSpeed) {
-        this.swimmingSpeed = swimmingSpeed;
     }
 
     public int getEndurance() {
@@ -70,7 +60,6 @@ public abstract class Animal {
         return Animal.class.getSimpleName() + '{' +
                 "Имя = '" + name + '\'' +
                 ", Скорость бега = " + runningSpeed + " м/с" +
-                ", Скорость плавания = " + swimmingSpeed + " м/с" +
                 ", Выносливость = " + endurance + " ед." +
                 '}';
     }

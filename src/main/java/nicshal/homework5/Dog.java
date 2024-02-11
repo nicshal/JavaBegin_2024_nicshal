@@ -4,8 +4,19 @@ public class Dog extends Animal implements Swimming {
 
     public static final int SWIMMING_COST = 2;
 
-    public Dog(String name, int runningSpeed, int swimmingSpeed, int endurance) {
-        super(name, runningSpeed, swimmingSpeed, endurance);
+    private int swimmingSpeed;
+
+    public Dog(String name, int runningSpeed, int endurance, int swimmingSpeed) {
+        super(name, runningSpeed, endurance);
+        this.swimmingSpeed = swimmingSpeed;
+    }
+
+    public int getSwimmingSpeed() {
+        return swimmingSpeed;
+    }
+
+    public void setSwimmingSpeed(int swimmingSpeed) {
+        this.swimmingSpeed = swimmingSpeed;
     }
 
     @Override
@@ -23,7 +34,8 @@ public class Dog extends Animal implements Swimming {
     @Override
     public String toString() {
         return Dog.class.getSimpleName() + '{' +
-                super.toString() +
+                "Скорость плавания = " + swimmingSpeed + " м/с" +
+                ", " + super.toString() +
                 '}';
     }
 
