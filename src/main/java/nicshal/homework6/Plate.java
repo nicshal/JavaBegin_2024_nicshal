@@ -37,16 +37,14 @@ public class Plate {
     }
 
     public boolean removeFood(int foodAmount) {
-        if (foodAmount > 0)
-            if ((getCurrentPlateFilling() - foodAmount) >= 0) {
-                setCurrentPlateFilling(getCurrentPlateFilling() - foodAmount);
-                return true;
-            } else {
-                return false;
-            }
-        else {
+        if (foodAmount <= 0) {
             return true;
         }
+        if (getCurrentPlateFilling() >= foodAmount) {
+            setCurrentPlateFilling(currentPlateFilling - foodAmount);
+            return true;
+        }
+        return false;
     }
 
     @Override
