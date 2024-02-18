@@ -39,22 +39,22 @@ public class Main {
 
         try {
             System.out.println("Сумма злементов тестового массива testArray1 = " + sumItems(testArray1));
-        } catch (RuntimeException err) {
+        } catch (AppArraySizeException | AppArrayDataException err) {
             System.out.println("Поймали ошибку: " + err);
         }
         try {
             System.out.println("Сумма злементов тестового массива testArray2 = " + sumItems(testArray2));
-        } catch (RuntimeException err) {
+        } catch (AppArraySizeException | AppArrayDataException err) {
             System.out.println("Поймали ошибку: " + err);
         }
         try {
             System.out.println("Сумма злементов тестового массива testArray3 = " + sumItems(testArray3));
-        } catch (RuntimeException err) {
+        } catch (AppArraySizeException | AppArrayDataException err) {
             System.out.println("Поймали ошибку: " + err);
         }
         try {
             System.out.println("Сумма злементов тестового массива testArray4 = " + sumItems(testArray4));
-        } catch (RuntimeException err) {
+        } catch (AppArraySizeException | AppArrayDataException err) {
             System.out.println("Поймали ошибку: " + err);
         }
     }
