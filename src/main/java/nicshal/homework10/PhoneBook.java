@@ -1,13 +1,10 @@
 package nicshal.homework10;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class PhoneBook {
 
-    private final HashMap<String, String> phoneMap = new HashMap<>();
+    private final Map<String, String> phoneMap = new HashMap<>();
     private static final String BAD_PARAMETER_ERROR =
             "В метод %s передано некорректное значение параметра %s --> %s";
 
@@ -27,7 +24,7 @@ public class PhoneBook {
             return Collections.emptyList();
         }
         ArrayList<String> phoneList = new ArrayList<>();
-        for (HashMap.Entry<String, String> entry : phoneMap.entrySet()) {
+        for (Map.Entry<String, String> entry : phoneMap.entrySet()) {
             if (entry.getValue().equals(fio)) {
                 phoneList.add(entry.getKey());
             }
