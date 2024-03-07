@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Tree<T extends Comparable<T>> implements SearchTree<T> {
 
-    public TreeNode<T> rootNode;
+    private TreeNode<T> rootNode;
 
     public Tree(List<T> list) {
         rootNode = sortedArrayToTree(list);
@@ -45,7 +45,7 @@ public class Tree<T extends Comparable<T>> implements SearchTree<T> {
     private TreeNode<T> sortedArrayToTree(List<T> list, int start, int end) {
         if (start > end) return null;
         int middle = start + (end - start) / 2;
-        TreeNode<T> node = new TreeNode<T>(list.get(middle));
+        TreeNode<T> node = new TreeNode<>(list.get(middle));
         node.setLeftNode(sortedArrayToTree(list, start, middle - 1));
         node.setRightNode(sortedArrayToTree(list, middle + 1, end));
         return node;
