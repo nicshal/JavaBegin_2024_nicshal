@@ -24,7 +24,7 @@ public class Operator<T, R> {
 
     @Override
     public String toString() {
-        return Employee.class.getSimpleName() + '{' +
+        return Operator.class.getSimpleName() + '{' +
                 "name=" + name +
                 ", operator=" + operator +
                 '}';
