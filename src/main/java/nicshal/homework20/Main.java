@@ -60,10 +60,10 @@ public class Main {
     }
 
     public static int countNumberOccurrences(BufferedReader bufferedReader, String findString) throws IOException {
-        String record;
+        String rec;
         int quantity = 0;
-        while ((record = bufferedReader.readLine()) != null) {
-            quantity += (record.split(findString).length) - 1;
+        while ((rec = bufferedReader.readLine()) != null) {
+            quantity += (rec.split(findString).length) - 1;
         }
         return quantity;
     }
